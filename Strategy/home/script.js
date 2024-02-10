@@ -48,4 +48,4 @@ try {
 }
 
 // Get the json in home page
-let data = require("Strategy/data.json");
+let data = require("Strategy/data/data.json");
