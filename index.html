@@ -5,10 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>home</title>
-    <link rel="stylesheet" href="Strategy/style.css">
-    <script src="Strategy/script.js"></script>
+    <link rel="stylesheet" href="Strategy/home/style.css">
+    <script src="Strategy/home/script.js"></script>
   </head>
   <body>
+	  <form id="Form">
+		<input id="Username" type="text" placeholder="Your Username">
+		<button id="SubmitButton" type="submit">Send</button>
+          </form>
+	  <script type="text/javascript">
+		  var form = document.getElementById("Form");
+                  var input = document.getElementById("Username");
+                  var botao = document.getElementById("SubmitButton");
+
+                  
+                  form.addEventListener("submit", function(event) {
+                  
+                  event.preventDefault();
+
+                  var valor = input.value;
+
+
+                  try {
+                       var json = JSON.parse(valor);
+
+                       if (json.nome && json.idade && json.email) {
+			       window.location.href = "game.html";
+		       } else {
+			       form.insertAdjacentHTML("beforeend", "<p class='erro'>O JSON deve conter os campos nome, idade e email.</p>");
+		       }
+		  } catch (erro) {
+			  form.insertAdjacentHTML("beforeend", "<p class='erro'>O valor digitado não é um JSON válido.</p>");
+		  };
+		  
+
+	  </script>
 	
   </body>
 </html>
+
