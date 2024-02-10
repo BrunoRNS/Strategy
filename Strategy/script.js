@@ -2,55 +2,50 @@
 const fs = require("fs");
 const https = require("https");
 
-// The bin ID and KEY
-const id = "60e8c9f7e4b3f2a02c8c0a7a"; 
-const secretKey = "$2b$10$z8Z1JZmQlO6YtXm8nHkLxO0K0Z5Wv9wZ7o6jyq7T0d0X4Zx0X1E4G";
+// The bin ID and API of JSONBinIO
+const id = "65c68d64266cfc3fde88254e"; 
+const api = "$2a$10$3CIY0DoGOnJ8LKdzhENZ4OnjB2v5Ww1IRA9ZQuDUE1d4O3oG5gbRK";
 
-// Cria uma função assíncrona que usa o método fetch() para obter o JSON do seu bin
+// An async function to get the json
 async function getJSON(id, secretKey) {
-  // Faz uma requisição HTTP GET para o seu bin
+  // A https request with fetch in the method GET, to get the JSON
   let response = await fetch(`https://api.jsonbin.io/b/${id}`, {
     headers: {
-      "secret-key": secretKey
+      "secret-key": api
     }
   });
-  // Verifica se a resposta foi bem-sucedida
+  // Verify if ok
   if (response.ok) {
-    // Converte a resposta em um objeto JavaScript
+    // Convert into json
     let data = await response.json();
-    // Retorna os dados
+    // Return data
     return data;
   } else {
-    // Lança um erro se a resposta falhou
+    // Raise an error if failed
     throw new Error(response.status);
   }
 }
 
-// Chama a função getJSON dentro de um bloco try...catch e passa o ID e a chave secreta como argumentos
+// Call the GetJSON function recursiving
 try {
-  // Chama a função getJSON com o ID e a chave secreta do seu bin
-  let data = await getJSON(id, secretKey);
-  // Faz algo com os dados
-  console.log(data);
-  // Converte os dados em uma string JSON
+  let data = await getJSON(id, api);
+  // Convert in a JSON string
   let dataString = JSON.stringify(data);
-  // Escreve a string JSON no arquivo data.json
+  // Change Data Content
   fs.writeFile("Strategy/data.json", dataString, (err) => {
-    // Verifica se houve algum erro
+    // Verify if there is an error
     if (err) {
-      // Lança o erro se ocorreu
+      // Throw the error
       throw err;
     } else {
-      // Exibe uma mensagem de sucesso se não ocorreu
-      console.log("Arquivo data.json salvo com sucesso!");
+      // Success message
+      console.log("200! Success");
     }
   });
 } catch (error) {
-  // Trata o erro se ocorrer
+  // If an exception happen in proccess
   console.error(error);
 }
 
-// Carrega o arquivo data.json em sua página index.html usando o método require() do Node.js
+// Get the json in home page
 let data = require("Strategy/data.json");
-// Faz algo com os dados
-console.log(data);
