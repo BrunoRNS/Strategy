@@ -7,7 +7,7 @@ const id = "65c68d64266cfc3fde88254e";
 const api = "$2a$10$3CIY0DoGOnJ8LKdzhENZ4OnjB2v5Ww1IRA9ZQuDUE1d4O3oG5gbRK";
 
 // An async function to get the json
-async function getJSON(id, secretKey) {
+async function getJSON(id, api) {
   // A https request with fetch in the method GET, to get the JSON
   let response = await fetch(`https://api.jsonbin.io/b/${id}`, {
     headers: {
