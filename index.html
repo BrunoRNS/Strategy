@@ -31,7 +31,7 @@
 
 
                   try {
-                       var json = JSON.parse(valor);
+                       var json = window.global(form);
 
                        if (json.nome && json.idade && json.email) {
 			       window.location.href = "/Stategy/game.html";
