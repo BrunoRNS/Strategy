@@ -41,5 +41,5 @@ function data(form, id ="65c68d64266cfc3fde88254e", api = "$2a$10$3CIY0DoGOnJ8LK
      });
    } catch (error) {
        // If an exception happen in proccess
-       console.error(error);
+       form.insertAdjacentHTML("beforeend","<p class='erro'>Error 106." + error + "</p>");
    }
