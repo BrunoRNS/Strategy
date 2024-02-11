@@ -32,7 +32,7 @@ try {
   // Convert in a JSON string
   let dataString = JSON.stringify(data);
   // Change Data Content
-  fs.writeFile("Strategy/data.json", dataString, (err) => {
+  fs.writeFile("/Strategy/data.json", dataString, (err) => {
     // Verify if there is an error
     if (err) {
       // Throw the error
