@@ -36,10 +36,10 @@
                        if (json.nome && json.idade && json.email) {
 			       window.location.href = "/Stategy/game.html";
 		       } else {
-			       form.insertAdjacentHTML("beforeend", "<p class='erro'>O JSON deve conter os campos nome, idade e email.</p>");
+			       form.insertAdjacentHTML("beforeend", "<p class='erro'>Error 103.</p>");
 		       }
 		  } catch (erro) {
-			  form.insertAdjacentHTML("beforeend", "<p class='erro'>O valor digitado não é um JSON válido.</p>");
+			  form.insertAdjacentHTML("beforeend", "<p class='erro'>Error 102.</p>");
 		  };
 		  
 
