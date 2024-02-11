@@ -1,3 +1,3 @@
-from Dex import Hello
+from dex import Hello
 
 Hello()
