@@ -1,12 +1,8 @@
-// Import the modules FS and HTTPS
-const fs = require("fs");
-const https = require("https");
-
 // The bin ID and API of JSONBinIO
-const id = "65c68d64266cfc3fde88254e"; 
-const api = "$2a$10$3CIY0DoGOnJ8LKdzhENZ4OnjB2v5Ww1IRA9ZQuDUE1d4O3oG5gbRK";
-
-function data(page, id = id, api = api) {
+function data(page, id ="65c68d64266cfc3fde88254e", api = "$2a$10$3CIY0DoGOnJ8LKdzhENZ4OnjB2v5Ww1IRA9ZQuDUE1d4O3oG5gbRK") {
+    // Import the modules FS and HTTPS
+    const fs = require("fs");
+    const https = require("https");
     // An async function to get the json
     async function getJSON(id, api) {
       // A https request with fetch in the method GET, to get the JSON
