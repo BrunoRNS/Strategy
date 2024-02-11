@@ -5,14 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>home</title>
-    <link rel="stylesheet" href="Strategy/home/style.css">
-    <script src="Strategy/home/script.js"></script>
+    <link rel="stylesheet" href="/Strategy/home/style.css">
+    <script src="/Strategy/home/script.js"></script>
   </head>
   <body>
 	  <form id="Form">
 		<input id="Username" type="text" placeholder="Your Username">
-		<button id="SubmitButton" type="submit">Send</button>
+		<button id="SubmitButton" type="submit">Play Strategy</button>
           </form>
+	  <br />
+	  <a href="/Stategy/pyscript/mario/play_mario.html" id="link_mario">Play Mario from pyscript.net</a><span>(Only Desktop)</span>
+	  <br />
 	  <script type="text/javascript">
 		  var form = document.getElementById("Form");
                   var input = document.getElementById("Username");
@@ -30,7 +33,7 @@
                        var json = JSON.parse(valor);
 
                        if (json.nome && json.idade && json.email) {
-			       window.location.href = "game.html";
+			       window.location.href = "/Stategy/game.html";
 		       } else {
 			       form.insertAdjacentHTML("beforeend", "<p class='erro'>O JSON deve conter os campos nome, idade e email.</p>");
 		       }
