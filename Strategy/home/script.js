@@ -32,8 +32,8 @@ function data(form, id ="65c68d64266cfc3fde88254e", api = "$2a$10$3CIY0DoGOnJ8LK
      fs.writeFile("/Strategy/data.json", dataString, (err) => {
         // Verify if there is an error
         if (err) {
-           // Throw the error
-           throw err;
+           // Throw the error             
+           form.insertAdjacentHTML("beforeend", "<p class='erro'>Error 100." + err + "</p>");
         } else {
            // Success message
            console.log("200! Success");
