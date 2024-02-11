@@ -14,39 +14,36 @@ function data(page, id = id, api = api) {
      headers: {
       "secret-key": api
      }
-  });
-  // Verify if ok
-  if (response.ok) {
-    // Convert into json
-    let data = await response.json();
-    // Return data
-    return data;
-  } else {
-    // Raise an error if failed
-    throw new Error(response.status);
-  }
-}
+     });
+     // Verify if ok
+     if (response.ok) {
+       // Convert into json
+       let data = await response.json();
+       // Return data
+       return data;
+     } else {
+       // Raise an error if failed
+       throw new Error(response.status);
+     }
+   }
 
-// Call the GetJSON function recursiving
-try {
-  let data = await getJSON(id, api);
-  // Convert in a JSON string
-  let dataString = JSON.stringify(data);
-  // Change Data Content
-  fs.writeFile("/Strategy/data.json", dataString, (err) => {
-    // Verify if there is an error
-    if (err) {
-      // Throw the error
-      throw err;
-    } else {
-      // Success message
-      console.log("200! Success");
-    }
-  });
-} catch (error) {
-  // If an exception happen in proccess
-  console.error(error);
-}
-
-// Get the json in home page
-let data = require("Strategy/data/data.json");
+   // Call the GetJSON function recursiving
+   try {
+     let data = await getJSON(id, api);
+     // Convert in a JSON string
+     let dataString = JSON.stringify(data);
+     // Change Data Content
+     fs.writeFile("/Strategy/data.json", dataString, (err) => {
+     // Verify if there is an error
+     if (err) {
+       // Throw the error
+       throw err;
+     } else {
+       // Success message
+       console.log("200! Success");
+     }
+   });
+   } catch (error) {
+      // If an exception happen in proccess
+      console.error(error);
+   }
