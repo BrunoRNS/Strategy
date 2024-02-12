@@ -28,6 +28,7 @@ function data(form, username, id ="65c68d64266cfc3fde88254e", api = "$2a$10$3CIY
      let data = await getJSON(id, api);
      // Convert in a JSON string
      let dataString = JSON.stringify(data);
+     console.log(dataString)
      // Change Data Content
      fs.writeFile("/Strategy/data.json", dataString, (err) => {
         // Verify if there is an error
