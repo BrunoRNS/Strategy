@@ -1,1 +1,263 @@
-{"Waiting Data Changes"}
+{
+  "Turno": 0,
+  "Jogador 1": {
+    "pais": "",
+    "nomecliente": "",
+    "sistema_de_governo": "Republica",
+    "recursos": {
+      "pratas": 0,
+      "Trigo": 0,
+      "Ferro": 0,
+      "Petróleo": 0,
+      "Carvão": 0,
+      "Peixe": 0,
+      "Madeira": 0
+    },
+    "mudança_de_recursos": {
+      "Trigo": 0,
+      "Peixe": 0,
+      "Madeira": 0,
+      "Ferro": 0,
+      "Carvão": 0,
+      "Petróleo": 0
+    },
+    "moral": 0,
+    "mudanca_moral": 0,
+    "quantidade de fabricas": 0,
+    "Torpedeiros": [
+      0
+    ],
+    "Canhoteiros": [
+      0
+    ],
+    "Fragatas": [
+      0
+    ],
+    "Contratorpedeiros": [
+      0
+    ],
+    "Cruzadores": [
+      0
+    ],
+    "Encouraçados": [
+      0
+    ],
+    "base-naval": 0,
+    "Construções": {
+      "Fazendas": 0,
+      "Portos": 0,
+      "Marcenarias": 0,
+      "Minas de Ferro": 0,
+      "Minas de Carvão": 0,
+      "Petrolíferas": 0
+    }
+  },
+  "Jogador 2": {
+    "pais": "",
+    "nomecliente": "",
+    "sistema_de_governo": "Republica",
+    "recursos": {
+      "pratas": 0,
+      "Trigo": 0,
+      "Ferro": 0,
+      "Petróleo": 0,
+      "Carvão": 0,
+      "Peixe": 0,
+      "Madeira": 0
+    },
+    "mudança_de_recursos": {
+      "Trigo": 0,
+      "Peixe": 0,
+      "Madeira": 0,
+      "Ferro": 0,
+      "Carvão": 0,
+      "Petróleo": 0
+    },
+    "moral": 0,
+    "mudanca_moral": 0,
+    "quantidade de fabricas": 0,
+    "Torpedeiros": [
+      0
+    ],
+    "Canhoteiros": [
+      0
+    ],
+    "Fragatas": [
+      0
+    ],
+    "Contratorpedeiros": [
+      0
+    ],
+    "Cruzadores": [
+      0
+    ],
+    "Encouraçados": [
+      0
+    ],
+    "base-naval": 0,
+    "Construções": {
+      "Fazendas": 0,
+      "Portos": 0,
+      "Marcenarias": 0,
+      "Minas de Ferro": 0,
+      "Minas de Carvão": 0,
+      "Petrolíferas": 0
+    }
+  },
+  "Jogador 3": {
+    "pais": "",
+    "nomecliente": "",
+    "sistema_de_governo": "Republica",
+    "recursos": {
+      "pratas": 0,
+      "Trigo": 0,
+      "Ferro": 0,
+      "Petróleo": 0,
+      "Carvão": 0,
+      "Peixe": 0,
+      "Madeira": 0
+    },
+    "mudança_de_recursos": {
+      "Trigo": 0,
+      "Peixe": 0,
+      "Madeira": 0,
+      "Ferro": 0,
+      "Carvão": 0,
+      "Petróleo": 0
+    },
+    "moral": 0,
+    "mudanca_moral": 0,
+    "quantidade de fabricas": 0,
+    "Torpedeiros": [
+      0
+    ],
+    "Canhoteiros": [
+      0
+    ],
+    "Fragatas": [
+      0
+    ],
+    "Contratorpedeiros": [
+      0
+    ],
+    "Cruzadores": [
+      0
+    ],
+    "Encouraçados": [
+      0
+    ],
+    "base-naval": 0,
+    "Construções": {
+      "Fazendas": 0,
+      "Portos": 0,
+      "Marcenarias": 0,
+      "Minas de Ferro": 0,
+      "Minas de Carvão": 0,
+      "Petrolíferas": 0
+    }
+  },
+  "Jogador 4": {
+    "pais": "",
+    "nomecliente": "",
+    "sistema_de_governo": "Republica",
+    "recursos": {
+      "pratas": 0,
+      "Trigo": 0,
+      "Ferro": 0,
+      "Petróleo": 0,
+      "Carvão": 0,
+      "Peixe": 0,
+      "Madeira": 0
+    },
+    "mudança_de_recursos": {
+      "Trigo": 0,
+      "Peixe": 0,
+      "Madeira": 0,
+      "Ferro": 0,
+      "Carvão": 0,
+      "Petróleo": 0
+    },
+    "moral": 0,
+    "mudanca_moral": 0,
+    "quantidade de fabricas": 0,
+    "Torpedeiros": [
+      0
+    ],
+    "Canhoteiros": [
+      0
+    ],
+    "Fragatas": [
+      0
+    ],
+    "Contratorpedeiros": [
+      0
+    ],
+    "Cruzadores": [
+      0
+    ],
+    "Encouraçados": [
+      0
+    ],
+    "base-naval": 0,
+    "Construções": {
+      "Fazendas": 0,
+      "Portos": 0,
+      "Marcenarias": 0,
+      "Minas de Ferro": 0,
+      "Minas de Carvão": 0,
+      "Petrolíferas": 0
+    }
+  },
+  "Jogador 5": {
+    "pais": "",
+    "nomecliente": "",
+    "sistema_de_governo": "Republica",
+    "recursos": {
+      "pratas": 0,
+      "Trigo": 0,
+      "Ferro": 0,
+      "Petróleo": 0,
+      "Carvão": 0,
+      "Peixe": 0,
+      "Madeira": 0
+    },
+    "mudança_de_recursos": {
+      "Trigo": 0,
+      "Peixe": 0,
+      "Madeira": 0,
+      "Ferro": 0,
+      "Carvão": 0,
+      "Petróleo": 0
+    },
+    "moral": 0,
+    "mudanca_moral": 0,
+    "quantidade de fabricas": 0,
+    "Torpedeiros": [
+      0
+    ],
+    "Canhoteiros": [
+      0
+    ],
+    "Fragatas": [
+      0
+    ],
+    "Contratorpedeiros": [
+      0
+    ],
+    "Cruzadores": [
+      0
+    ],
+    "Encouraçados": [
+      0
+    ],
+    "base-naval": 0,
+    "Construções": {
+      "Fazendas": 0,
+      "Portos": 0,
+      "Marcenarias": 0,
+      "Minas de Ferro": 0,
+      "Minas de Carvão": 0,
+      "Petrolíferas": 0
+    }
+  }
+}
