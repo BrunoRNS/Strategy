@@ -27,18 +27,21 @@ function data(form, username, id ="65c68d64266cfc3fde88254e", api = "$2a$10$3CIY
         let data = await getJSON(id, api);
         // Convert in a JSON string
         let dataString = JSON.stringify(data);
-        console.log(dataString)
-        // Change Data Content
-        fs.writeFile("/Strategy/data.json", dataString, (err) => {
-            // Verify if there is an error
-            if (err) {
-                // Throw the error             
-                form.insertAdjacentHTML("beforeend", "<p class='erro'>Error 100." + err + "</p>");
-            } else {
-                // Success message
-                console.log("200! Success");
-            }
-        });
+
+        let dataContent = require('/Strategy/data/data.json')
+        if (dataString === dataContent) {
+            // Change Data Content
+            fs.writeFile("/Strategy/data.json", dataString, (err) => {
+                // Verify if there is an error
+                if (err) {
+                    // Throw the error             
+                    form.insertAdjacentHTML("beforeend", "<p class='erro'>Error 100." + err + "</p>");
+                } else {
+                    // Success message
+                    console.log("200! Success");
+                }
+            });
+        }
         return data;
     } catch (error) {
         // If an exception happen in proccess
