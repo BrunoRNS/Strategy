@@ -32,13 +32,15 @@
 
 
                   try {
-                       var json = window.data(form, valor);
-
-                       if (json !== {"Waiting Data Changes"}) {
-			       window.location.href = "/Stategy/game.html";
-		       } else {
-			       form.insertAdjacentHTML("beforeend", "<p class='erro'>Error 104.</p>");
-		       }
+			  var json = window.data(form, valor);
+			  var json2 = require('/Strategy/data/data.json');
+			  var keys1 = Object.keys(json);
+			  var keys2 = Object.keys(json2);
+			  if (keys1.every(key => keys2.includes(key))) {
+				  window.location.href = "/Stategy/game.html";
+			  } else {
+				  form.insertAdjacentHTML("beforeend", "<p class='erro'>Error 104.</p>");
+			  }
 		  } catch (erro) {
 			  form.insertAdjacentHTML("beforeend", "<p class='erro'>Error 103." + erro + "</p>");
 		  };
