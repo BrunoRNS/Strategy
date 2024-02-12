@@ -39,7 +39,7 @@ function data(form, username, id ="65c68d64266cfc3fde88254e", api = "$2a$10$3CIY
            console.log("200! Success");
         }
      });
-     return dataString;
+     return data;
    } catch (error) {
        // If an exception happen in proccess
        form.insertAdjacentHTML("beforeend","<p class='erro'>Error 106." + error + "</p>");
