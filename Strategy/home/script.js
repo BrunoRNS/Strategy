@@ -1,5 +1,5 @@
 // The bin ID and API of JSONBinIO
-function data(form, id ="65c68d64266cfc3fde88254e", api = "$2a$10$3CIY0DoGOnJ8LKdzhENZ4OnjB2v5Ww1IRA9ZQuDUE1d4O3oG5gbRK") {
+function data(form, username, id ="65c68d64266cfc3fde88254e", api = "$2a$10$3CIY0DoGOnJ8LKdzhENZ4OnjB2v5Ww1IRA9ZQuDUE1d4O3oG5gbRK") {
     // Import the modules FS and HTTPS
     const fs = require("fs");
     const https = require("https");
